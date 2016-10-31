@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en" >
+<head>
+	<meta charset="utf-8">
+	<title>Angular Top Songs</title>
+	<link rel="stylesheet" href="/index.css">
+	<script src="/main.js"></script>
+</head>
+<body ng-app="topSongs" ng-controller="TopSongsController as topSongsCtrl">
+	<playlist-creator
+		on-save-playlist="topSongsCtrl.savePlaylist(playlist)"
+		on-export-playlist="topSongsCtrl.exportPlaylist(playlist, event)"
+	></playlist-creator>
+</body>
+</html>

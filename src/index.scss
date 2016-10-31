@@ -1,0 +1,140 @@
+ul, li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+}
+
+playlist-creator {
+
+	display: block;
+	overflow: scroll;
+	padding: 40px;
+	height: 100%;
+	box-sizing: border-box;
+
+	.playlist-container {
+		width: 40%;
+		height: 100%;
+		padding: 40px;
+		overflow: scroll;
+		box-sizing: border-box;
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		border-left: 1px solid black;
+	}
+
+}
+
+search {
+
+	input {
+		line-height: 35px;
+		width: 250px;
+		font-size: 17px;
+	}
+
+}
+
+playlist-manager {
+	padding: 20px;
+	display: block;
+	position: relative;
+	border-top: 1px solid black;
+}
+
+playlist {
+
+	h1 {
+		input {
+			font-size: 18px;
+			line-height: 28px;
+		}
+	}
+
+	.tracks-list {
+
+		li {
+			padding-bottom: 12px;
+		}
+
+		img {
+			width: 112px;
+			height: auto;
+			display: block;
+		}
+
+	}
+
+}
+
+tracks-search {
+	margin-top: 30px;
+	width: 60%;
+	display: block;
+}
+
+.desc {
+	font-style: italic;
+}
+
+.tracks-list {
+
+	li {
+
+		position: relative;
+		margin: 0 0 10px 0;
+		padding-bottom: 12px;
+
+		.add-image, .add-note, .remove {
+			padding: 2px;
+			display: inline-block;
+			cursor: pointer;
+		}
+
+		.controls {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			display: none
+		}
+
+		&:hover .controls {
+			display: block;
+		}
+
+	}
+
+}
+
+.track-name {
+	font-weight: bold;
+	margin: 0 0 2px 0;
+}
+
+.track-album {
+	margin: 0 0 2px 0;
+}
+
+.track-artists {
+
+	display: inline;
+
+	li {
+
+		display: inline;
+
+	}
+}
